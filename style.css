@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0px;
+}
+
+aside {
+    width: 0%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background-color: black;
+    padding: 0;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+    overflow-x: hidden;
+}
+aside > a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 10px 15px;
+    margin-bottom: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 10px;
+}
+aside > a:nth-of-type(1) {
+    background-color: white;
+    color: black;
+}
+aside > a:hover {
+    background-color: white;
+    color: black;
+}
+
+aside > button {
+    margin-bottom: 5px;
+    position: relative;
+    left: 80%;
+    background-color: transparent;
+    color: white;
+    outline: none;
+    border: none;
+}
+main {
+    transition: margin-left 0.2s;
+    height: 100%;
+    /* padding: 20px; */
+}
+main > button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    background-color: black;
+    color: white;
+    outline: none;
+    border: none;
+    padding: 20px;
+}
+main > button > span {
+    font-size: 18px;
+}
